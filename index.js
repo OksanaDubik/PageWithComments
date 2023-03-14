@@ -7,7 +7,7 @@ let formButton = mainForm.button
 * функция добавдения лайков
  */
 function createLike() {
-    let btnHeart = document.isEqualNode('.heart');//нахожу все сердечки
+    let btnHeart = document.querySelectorAll('.heart');//нахожу все сердечки
 
     btnHeart.forEach(btn => {//перебираю сердечки
         btn.addEventListener('click', function (event) {//присваиваю каждому функцию
